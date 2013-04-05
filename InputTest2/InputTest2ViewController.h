@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InputTest2ViewController : UIViewController
+@interface InputTest2ViewController : UIViewController <UIPickerViewDelegate>;
+
+@property (weak, nonatomic) IBOutlet UILabel *mainLabel;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @end
+
+NSMutableArray *data;
+
